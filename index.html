@@ -20,14 +20,20 @@
 </head>
 <body>
 
-<div class = "brown-title">    
-<h1 class= "title">Crystal Collector!</h1>
-</div>
+<div class = "container">    
+    <div class = "row">
+        <div class = "col-xs-3">
+            <div class= "title">
+<h1 class= "Game Name">Crystal Collector!</h1>
+            
+        </div>
+        </div>
+        </div>
 
-<br><br><br><br>
-
-<article class= "orange-article">
-<p class= "instructions">
+<div class="row">
+<div class = "col-xs-6">
+    <div class= "panel panel-default">
+    <div class= "instructions">
         You will be given a random number at the start of the game.
         <br>
         There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.
@@ -37,34 +43,52 @@
         The value of each crystal is hidden from you until you click on it.
         <br>
         Each time when the game starts, the game will change the values of each crystal.
-        
-</p>
-</article>
+    </div>
+    </div> 
+    </div>
 
-<article class= "random-rectangle" >
-    <p class = "randomNumber">
-Random number
-    </p>
-</article>
+<div class= "row">
+    <div class= "col-xs-4">
+        <div class= "panel panel-default">
+            <div class= "random-rectangle">
+                Random Number: <span class="ranNumber">
+            </div>    
+        </div>
+    </div>
 
-<article class ="streak" >
-<p class= "streak-square">square score </p>
-</article>
+    <div class ="col-xs-4">
+        <div class= "panel panel-default">
+            <div class= "streak-keeper">
+                Wins: <span class="wins"></span> <br> <br>
+                Losses: <span class= "losses"></span>
+            </div>
+        </div>
+    </div>
+</div>        
 
-<section class = "images">
-    <img src="assets/images/blue_gem.jpg" class= "img-thumbnail btn-blue" alt="blue" height="150px" width="150px">
-    <img src="assets/images/green_gem.jpg" class="img-thumbnail btn-green" alt="green" height="100px" width="100px">
-    <img src="assets/images/red_gem.png" class="img-thumbnail btn-red" alt="red" height="100px" width="100px">
-    <img src="assets/images/yellow_gem.jpg" class="img-thumbnail btn-yellow" alt="yellow" height="125px" width="125px">
-</section>
+<div class= "row">
+    <div class= "col-xs-12">
+        <div class="images">
+            <img src="assets/images/blue_gem.jpg" class= "img-thumbnail btn blue" alt="blue" height="150px" width="150px">
+            <img src="assets/images/green_gem.jpg" class="img-thumbnail btn green" alt="green" height="100px" width="100px">
+            <img src="assets/images/red_gem.png" class="img-thumbnail btn red" alt="red" height="100px" width="100px">
+            <img src="assets/images/yellow_gem.jpg" class="img-thumbnail btn yellow" alt="yellow" height="125px" width="125px">
+        </div>
+    </div>        
+</div>
 
-<section class= "long-square">
-    <p> Your total score is: </p>
-</section>
+    <div class= "row">
+        <div class= "col-xs-6">
+            <div class= "panel panel-default">
+                <div class= "total-score">
+                    Your total score is: <span class = "totScore"></span>
+                </div>    
+            </div>
+        </div>    
+    </div>
+</div>
 
-<section class = "total score">
-***Place holder***
-</section>
+
 
 
 

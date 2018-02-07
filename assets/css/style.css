@@ -9,14 +9,8 @@ h1 {
     padding: 20px, 20px, 20px, 20px;
 }
 
-.orange-article{
+.instructions{
     background-color: coral;
-    padding: 40px, 60px, 40px, 60px;
-    margin-right: 180px;
-   
-}
-
-.instructions {
     color: green;
     font-size: medium;
     font-weight: bold;
@@ -24,17 +18,18 @@ h1 {
 
 .random-rectangle {
     background-color: lightgreen;
-    padding: 30px, 40px, 30px, 40px;
-    float: left;
+    color: orangered;
+    font-size: 30px;
+    
 }
 
-.randomNumber {
-    color: purple;
+.streak-keeper {
+    background-color: black;
+    color: white;
     font-size: 25px;
-    float: left;
 }
 
-.streak {
-    background-color: lightseagreen;
-
+.total-score {
+    background-color: teal;
+    font-size: 30px;
 }
