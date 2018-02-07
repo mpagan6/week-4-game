@@ -11,39 +11,38 @@
 // game will keep track of wins and losses
 // random number shown at the start of game between 19-120
 
+$(document).ready(function() {
 //create variables
 //random between 19-120 
-    var randomNumber= Math.floor((Math.random * 120) + 1);
+    var randomNumber= Math.floor((Math.random() * 120) + 1);
 
  //Crystals random values 1-12
-   var blue = Math.floor((Math.random * 12) + 1);
-   var green = Math.floor((Math.random * 12) + 1);
-   var red = Math.floor((Math.random * 12) + 1);
-   var yellow = Math.floor((Math.random * 12) + 1);
+   var blue = Math.floor((Math.random() * 12) + 1);
+   var green = Math.floor((Math.random() * 12) + 1);
+   var red = Math.floor((Math.random() * 12) + 1);
+   var yellow = Math.floor((Math.random() * 12) + 1);
 
    var wins = 0;
    var losses = 0;
    var totScore= 0; 
-
-   $(document).ready(function() {
-        
+       
     $("#ranNumber").text(randomNumber);
        
 
-        $(".blue").click(function() {
+        $("blue").click(function() {
         update(blue);
         });
       
         $(".green").click(function() {
-        update(green);
+        update("green");
         });
       
         $(".red").click(function() {
-        update(red);
+        update("red");
         });
       
         $(".yellow").click(function() {
-        update(yellow);
+        update("yellow");
         });
       });
       
@@ -64,7 +63,7 @@
       }
       
       
-      function update(color) {
+      function update() {
         totScore += color;
       
         $(".current").empty();
